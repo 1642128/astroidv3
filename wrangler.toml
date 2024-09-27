@@ -8,7 +8,7 @@ workers_dev = false
 bucket = "./static
 pages_build_output_dir = '/src/static'
 [build]
-command = "npm install --global @tomphttp/bare-server-node"
+command = "npm install @tomphttp/bare-server-node"
 command = "npm install @titaniumnetwork-dev/ultraviolet"
 command = "npm install express"
 command = "npm install socks-proxy-agent"
