@@ -4,8 +4,9 @@ main = "src/index.js"
 compatibility_date = "2024-09-27"
 
 workers_dev = false
-
-
+[site]
+bucket = "./static
+pages_build_output_dir = '/src/static'
 [build]
 command = "npm install --global @tomphttp/bare-server-node"
 command = "npm install @titaniumnetwork-dev/ultraviolet"
@@ -15,7 +16,7 @@ command = "npm install dotenv"
 command = "npm install url"
 command = "npm install"
 command = "npm start"
-pages_build_output_dir = '/src/static'
+
 
 cwd = "build_cwd"
 watch_dir = "build_watch_dir"
