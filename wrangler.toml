@@ -8,7 +8,6 @@ workers_dev = false
 bucket = "./static
 pages_build_output_dir = '/src/static'
 [build]
-
 command = "npm install @titaniumnetwork-dev/ultraviolet"
 command = "npm install express"
 command = "npm install socks-proxy-agent"
@@ -17,3 +16,5 @@ command = "npm install url"
 command = "npm install"
 command = "npm start"
 command = "npm install @tomphttp/bare-server-node"
+cwd = "build_cwd"
+watch_dir = "build_watch_dir"
