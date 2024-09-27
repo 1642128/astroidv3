@@ -5,7 +5,7 @@ compatibility_date = "2024-09-27"
 
 workers_dev = false
 [site]
-bucket = "./static
+bucket = "./static"
 pages_build_output_dir = '/src/static'
 
 [build]
