@@ -15,7 +15,7 @@ command = "npm install dotenv"
 command = "npm install url"
 command = "npm install"
 command = "npm start"
-
+pages_build_output_dir = '/src/static'
 
 cwd = "build_cwd"
 watch_dir = "build_watch_dir"
