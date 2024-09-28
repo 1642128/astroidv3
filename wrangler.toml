@@ -11,4 +11,4 @@ bucket = './static'
 cwd = "build_cwd"
 watch_dir = "build_watch_dir"
 command = "npm install @tomphttp/bare-server-node && npm install @titaniumnetwork-dev/ultraviolet && npm install express && npm install socks-proxy-agent && npm install dotenv && npm install url && npm install && npm start"
-pages_build_output_dir = '/src/static'
+pages_build_output_dir = '/static'
