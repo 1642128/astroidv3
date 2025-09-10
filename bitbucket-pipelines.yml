@@ -1,0 +1,12 @@
+image: atlassian/default-image:3
+
+pipelines:
+  default:
+    - step:
+        name: 'Deploy to S3'
+        script:
+          # Install AWS CLI if not pre-installed
+          - pip install --upgrade pip
+          - pip install awscli
+          # Deploy the "public" directory to S3
+          - aws s3 sync public/ s3://theresaholeinthebucketdearlayza/ --delete
