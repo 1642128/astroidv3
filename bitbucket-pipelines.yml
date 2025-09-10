@@ -5,8 +5,6 @@ pipelines:
     - step:
         name: 'Deploy to S3'
         script:
-          # Install AWS CLI if not pre-installed
           - pip install --upgrade pip
           - pip install awscli
-          # Deploy the "public" directory to S3
-          - aws s3 sync public/ s3://theresaholeinthebucketdearlayza/ --delete
+          - aws s3 sync public/ s3://theresaholeinthebucketdearlayza/ --region us-east-1 --delete
